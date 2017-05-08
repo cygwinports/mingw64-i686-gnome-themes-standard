@@ -15,6 +15,7 @@ PKG_NAMES="${NAME} mingw64-i686-adwaita-themes"
 mingw64_i686_gnome_themes_standard_REQUIRES="mingw64-i686-adwaita-themes"
 mingw64_i686_gnome_themes_standard_CONTENTS="
 	etc/postinstall/
+	etc/preremove/
 	usr/share/doc/
 	${CROSS_DATADIR#/}/icons/HighContrast/
 	${CROSS_DATADIR#/}/themes/HighContrast/
@@ -23,7 +24,7 @@ mingw64_i686_adwaita_themes_REQUIRES="mingw64-i686-adwaita-icon-theme mingw64-i6
 mingw64_i686_adwaita_themes_CONTENTS="
 	${CROSS_LIBDIR#/}/gtk-2.0/*/engines/libadwaita.dll
 	${CROSS_DATADIR#/}/gtk-2.0/gtkrc
-	${CROSS_DATADIR#/}/themes/Adwaita/
+	${CROSS_DATADIR#/}/themes/Adwaita*/
 "
 
 src_install() {
